@@ -1,11 +1,14 @@
+// enter clicked 
 const searchBtn =document.getElementById('search-btn');
 const foodField =document.getElementById('food-field');
 foodField.addEventListener('keypress', function(event){
-    if(event.keyCode == 13){
+    // console.log('keypress korci');
+    if(event.key == "Enter"){
+        // console.log("enter clicked");
         searchBtn.click();
     }
-})
-
+});
+// enter clicked 
 
 const loadFood = () =>{
     const foodField = document.getElementById('food-field');
