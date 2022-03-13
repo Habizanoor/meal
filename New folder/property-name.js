@@ -1,0 +1,10 @@
+const bottol = {color : 'yellow',hold:'water',price:50,isCleaned:true};
+const keys = Object.keys(bottol);
+console.log(keys);
+const values = Object.values(bottol);
+console.log(values);
+const pairs = Object.entries(bottol);
+console.log(pairs);
+Object.seal(bottol);
+delete bottol.isCleaned;
+console.log(bottol);
